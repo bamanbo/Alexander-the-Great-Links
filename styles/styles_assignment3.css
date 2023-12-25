@@ -1,0 +1,192 @@
+/* font.css */
+
+/* Noto Serif */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300&display=swap');
+/* Cardo */
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Noto+Serif:wght@300&display=swap');
+/* Roboto */
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Noto+Serif:wght@300&family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
+
+/* THE GENERAL */
+
+/* Making the background a more light brown colour */
+
+body {
+	background-color: #fff5ee;
+}
+
+/* THE SEMANTIC BLOCKS */
+
+footer {
+	font-family: "Roboto", sans-serif;
+	position: relative;
+	z-index: -1;
+	/* places the footer behind the context */
+	background-color: #333;
+	color: burlywood;
+	padding: 10px;
+	/* is added for spacing */
+	text-align: center;
+}
+
+figcaption {
+	background-color: #C4A484;
+	line-height: 1.5;
+	font-family: "Roboto";
+	font-style: italic;
+	font-size: 1rem;
+	font-weight: normal;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em 0em 1em 0em;
+	display: block;
+}
+
+iframe {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2em;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	width: 100%;
+}
+
+/* STRUCTURING ELEMENTS */
+
+h1 {
+	font-family: 'Noto Serif', serif;
+	font-size: 350%;
+	font-weight: 400;
+	color: #8B4513;
+	margin-top: 20px;
+	text-align: center;
+}
+
+h2 {
+	font-family: "Cardo", sans-serif;
+	padding-top: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	max-width: 73ch;
+}
+
+/* SINGLE ELEMENTS */
+
+p {
+	font-family: "Roboto", sans-serif;
+	padding: 1em 1em 1em 1em;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100ch;
+	line-height: 2;
+}
+
+/* INLINE ELEMENTS */
+
+/* a pseudo-classes */
+
+/* color of the link whilst looking at it first time*/
+
+a:link {
+	color: sandybrown;
+	background: lightgoldenrodyellow;
+}
+
+/* color of the link after visiting the link */
+
+a:visited {
+	color: sandybrown;
+	background: lightgoldenrodyellow;
+}
+
+/*color when navigating using the keyboard*/
+
+a:focus {
+	color: beige;
+	background: black;
+}
+
+/*color when hovering over the link*/
+
+a:hover {
+	color: burlywood;
+	background: black;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+/*color whilst clicking the link*/
+
+a:active {
+	color: black;
+	background: red;
+}
+
+/* CLASSES */
+
+/* Use Noto Serif font for headings in the class l-header */
+
+.l-header {
+	background-color: #C4A484;
+	color: white;
+	padding: 10px;
+}
+
+.top-header {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.top-header li {
+	margin-right: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: color 0.3s;
+}
+
+.top-header:hover {
+	position: relative;
+}
+
+.top-header li:hover {
+	color: lightgrey;
+}
+
+.image-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.info-box {
+	background-color: #C4A484;
+	padding: 5px;
+	border: 1px solid #ccc;
+	margin: 10px 0;
+	text-align: center;
+	font-style: italic;
+	line-height: 1.5;
+}
+
+.greekmacedonia {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	width: 50%;
+}
